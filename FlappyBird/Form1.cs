@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -26,6 +27,7 @@ namespace FlappyBird
             {
                 InitializeComponent();
                 GameMenu.Hide();
+                lblValue.Text = Properties.Settings.Default.h_score;
             }
             catch
             {
@@ -37,8 +39,9 @@ namespace FlappyBird
             Flappy.Top += gravity;
             PipeBot.Left -= pipespeed;
             PipeTop.Left -= pipespeed;
-            ScoreTxt.Text = "Score: " + score;
+            ScoreTxt.Text = "SCORE: " + score;
 
+            //Ökar score när Flappy passerar pipes. 
             if (PipeBot.Left < -150)
             {
                 PipeBot.Left = 800;  
@@ -49,16 +52,25 @@ namespace FlappyBird
                 PipeTop.Left = 950;
                 score++;
             }
+
+            //Highscore mätare som sparar score. 
+            int a = Int32.Parse(lblValue.Text);  
+            if (score > a)
+            {
+                lblValue.Text = score.ToString();
+                Properties.Settings.Default.h_score = lblValue.Text;
+                Properties.Settings.Default.Save();
+            }
             
             if (Flappy.Bounds.IntersectsWith(PipeBot.Bounds) ||
                 Flappy.Bounds.IntersectsWith(PipeTop.Bounds) ||
                 Flappy.Bounds.IntersectsWith(Ground.Bounds)
                 )
             {
-                endGame(); // Kontrollerar så att Flappy inte fuskar, han får ej röra något. 
+                endGame(); // Kontrollerar så att Flappy inte fuskar, han får ej röra något.
             }
 
-            if(score > 5)
+            if (score > 5)
             {
                 pipespeed = 18;
             }
@@ -74,13 +86,13 @@ namespace FlappyBird
             {
                 pipespeed = 50;
             }
-
-            if (Flappy.Top < -25)
+            if (Flappy.Top < -25)  // Kontrollerar så att Flappy inte fuskar genom att flyga över banan. 
             {
-                endGame(); // Kontrollerar så att Flappy inte fuskar genom att flyga över banan. 
+                endGame();
             }
+
         }
-        private void gamekeyisdown(object sender, KeyEventArgs e)
+        public void gamekeyisdown(object sender, KeyEventArgs e)
         {
             // MessageBox.Show("Key press detetced, yi-haa!"); Testar keypress. 
             if (e.KeyCode == Keys.Space)
@@ -89,7 +101,7 @@ namespace FlappyBird
             }
         }
 
-        private void gamekeyisup(object sender, KeyEventArgs e)
+        public void gamekeyisup(object sender, KeyEventArgs e)
         {
              //MessageBox.Show("Key release detetced, yi-haa!"); Testar keyrealease.
 
@@ -100,22 +112,21 @@ namespace FlappyBird
 
         }
 
-        private void endGame()
+        private void endGame() 
         {
             GameTimer.Stop();
-            ScoreTxt.Text += " Game Over! ";
+            ScoreTxt.Text += ", REKT! ";
             score = 0; 
             pipespeed = 13; // Resetar speed inför '"Retry". 
             GameMenu.Show(); 
         }
-
         private void LabelRestart_Click(object sender, EventArgs e)
         {
-            GameTimer.Start(); 
+            GameTimer.Start();
             GameMenu.Hide();
-            Flappy.Location = new Point (72, 149);
-            PipeTop.Location = new Point (277, -3);
-            PipeBot.Location = new Point(388, 281);
+            Flappy.Location = new Point(72, 149);
+            PipeTop.Location = new Point(277, -3);
+            PipeBot.Location = new Point(365, 268);
             Ground.Location = new Point(-9, 476);
         }
 
@@ -124,13 +135,6 @@ namespace FlappyBird
             Application.Exit();
         }
 
-
-        public static List<int> Hscore = new List<int>();
-        public static List<int> player = new List<int>();
-
-        private void lblHighScore_Click(object sender, EventArgs e)
-        {
-          
-        }
+        
     }
 }
