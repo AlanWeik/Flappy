@@ -17,9 +17,9 @@ namespace FlappyBird
 {
     public partial class Form1 : Form
     {
-        int pipespeed = 13;
-        int gravity = 15;
-        int score = 0;
+        public static int pipespeed = 13;
+        public static int gravity = 15;
+        public static int score = 0;
 
         public Form1()
         { 
@@ -34,7 +34,7 @@ namespace FlappyBird
                 Console.WriteLine("Failed to initialize.");
             }
         }
-        private void GameTimer_Tick(object sender, EventArgs e)
+        public void GameTimer_Tick(object sender, EventArgs e)
         {
             Flappy.Top += gravity;
             PipeBot.Left -= pipespeed;
@@ -112,7 +112,7 @@ namespace FlappyBird
 
         }
 
-        private void endGame() 
+        public  void endGame() 
         {
             GameTimer.Stop();
             ScoreTxt.Text += ", REKT! ";
@@ -120,7 +120,7 @@ namespace FlappyBird
             pipespeed = 13; // Resetar speed inför '"Retry". 
             GameMenu.Show(); 
         }
-        private void LabelRestart_Click(object sender, EventArgs e)
+        public void LabelRestart_Click(object sender, EventArgs e)
         {
             GameTimer.Start();
             GameMenu.Hide();
@@ -130,7 +130,7 @@ namespace FlappyBird
             Ground.Location = new Point(-9, 476);
         }
 
-        private void labelQuit_Click(object sender, EventArgs e)
+        public void labelQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

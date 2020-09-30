@@ -52,10 +52,9 @@
             this.ScoreTxt.AutoSize = true;
             this.ScoreTxt.BackColor = System.Drawing.Color.White;
             this.ScoreTxt.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScoreTxt.Location = new System.Drawing.Point(11, 36);
-            this.ScoreTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ScoreTxt.Location = new System.Drawing.Point(16, 55);
             this.ScoreTxt.Name = "ScoreTxt";
-            this.ScoreTxt.Size = new System.Drawing.Size(69, 21);
+            this.ScoreTxt.Size = new System.Drawing.Size(99, 31);
             this.ScoreTxt.TabIndex = 5;
             this.ScoreTxt.Text = "SCORE:";
             // 
@@ -63,10 +62,9 @@
             // 
             this.Ground.BackColor = System.Drawing.Color.White;
             this.Ground.Image = global::FlappyBird.Properties.Resources._411_4119076_flappy_bird_ground;
-            this.Ground.Location = new System.Drawing.Point(-9, 476);
-            this.Ground.Margin = new System.Windows.Forms.Padding(2);
+            this.Ground.Location = new System.Drawing.Point(-14, 732);
             this.Ground.Name = "Ground";
-            this.Ground.Size = new System.Drawing.Size(549, 76);
+            this.Ground.Size = new System.Drawing.Size(824, 117);
             this.Ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Ground.TabIndex = 4;
             this.Ground.TabStop = false;
@@ -74,10 +72,9 @@
             // Flappy
             // 
             this.Flappy.Image = global::FlappyBird.Properties.Resources.flappyBird;
-            this.Flappy.Location = new System.Drawing.Point(72, 149);
-            this.Flappy.Margin = new System.Windows.Forms.Padding(2);
+            this.Flappy.Location = new System.Drawing.Point(108, 229);
             this.Flappy.Name = "Flappy";
-            this.Flappy.Size = new System.Drawing.Size(48, 39);
+            this.Flappy.Size = new System.Drawing.Size(72, 60);
             this.Flappy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Flappy.TabIndex = 3;
             this.Flappy.TabStop = false;
@@ -85,10 +82,9 @@
             // PipeBot
             // 
             this.PipeBot.Image = global::FlappyBird.Properties.Resources.pipeBottom;
-            this.PipeBot.Location = new System.Drawing.Point(365, 268);
-            this.PipeBot.Margin = new System.Windows.Forms.Padding(2);
+            this.PipeBot.Location = new System.Drawing.Point(548, 412);
             this.PipeBot.Name = "PipeBot";
-            this.PipeBot.Size = new System.Drawing.Size(91, 216);
+            this.PipeBot.Size = new System.Drawing.Size(136, 332);
             this.PipeBot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PipeBot.TabIndex = 2;
             this.PipeBot.TabStop = false;
@@ -96,10 +92,9 @@
             // PipeTop
             // 
             this.PipeTop.Image = global::FlappyBird.Properties.Resources.pipeTop;
-            this.PipeTop.Location = new System.Drawing.Point(277, -3);
-            this.PipeTop.Margin = new System.Windows.Forms.Padding(2);
+            this.PipeTop.Location = new System.Drawing.Point(416, -5);
             this.PipeTop.Name = "PipeTop";
-            this.PipeTop.Size = new System.Drawing.Size(91, 170);
+            this.PipeTop.Size = new System.Drawing.Size(136, 262);
             this.PipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PipeTop.TabIndex = 0;
             this.PipeTop.TabStop = false;
@@ -117,11 +112,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GameMenu.Controls.Add(this.labelQuit);
             this.GameMenu.Controls.Add(this.LabelRestart);
-            this.GameMenu.Location = new System.Drawing.Point(190, 192);
-            this.GameMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.GameMenu.Location = new System.Drawing.Point(279, 271);
             this.GameMenu.Name = "GameMenu";
-            this.GameMenu.Padding = new System.Windows.Forms.Padding(2);
-            this.GameMenu.Size = new System.Drawing.Size(139, 69);
+            this.GameMenu.Size = new System.Drawing.Size(223, 122);
             this.GameMenu.TabIndex = 6;
             this.GameMenu.TabStop = false;
             this.GameMenu.Text = "Menu";
@@ -131,10 +124,9 @@
             this.labelQuit.AutoSize = true;
             this.labelQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelQuit.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuit.Location = new System.Drawing.Point(45, 36);
-            this.labelQuit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelQuit.Location = new System.Drawing.Point(72, 64);
             this.labelQuit.Name = "labelQuit";
-            this.labelQuit.Size = new System.Drawing.Size(55, 22);
+            this.labelQuit.Size = new System.Drawing.Size(81, 33);
             this.labelQuit.TabIndex = 2;
             this.labelQuit.Text = "QUIT";
             this.labelQuit.Click += new System.EventHandler(this.labelQuit_Click);
@@ -144,10 +136,9 @@
             this.LabelRestart.AutoSize = true;
             this.LabelRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LabelRestart.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelRestart.Location = new System.Drawing.Point(28, 14);
-            this.LabelRestart.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelRestart.Location = new System.Drawing.Point(47, 23);
             this.LabelRestart.Name = "LabelRestart";
-            this.LabelRestart.Size = new System.Drawing.Size(90, 22);
+            this.LabelRestart.Size = new System.Drawing.Size(133, 33);
             this.LabelRestart.TabIndex = 1;
             this.LabelRestart.Text = "RESTART";
             this.LabelRestart.Click += new System.EventHandler(this.LabelRestart_Click);
@@ -158,10 +149,9 @@
             this.lblHighScore.BackColor = System.Drawing.Color.White;
             this.lblHighScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblHighScore.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHighScore.Location = new System.Drawing.Point(11, 9);
-            this.lblHighScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHighScore.Location = new System.Drawing.Point(16, 14);
             this.lblHighScore.Name = "lblHighScore";
-            this.lblHighScore.Size = new System.Drawing.Size(117, 21);
+            this.lblHighScore.Size = new System.Drawing.Size(169, 31);
             this.lblHighScore.TabIndex = 3;
             this.lblHighScore.Text = "HIGH SCORE:";
             // 
@@ -171,19 +161,18 @@
             this.lblValue.BackColor = System.Drawing.Color.White;
             this.lblValue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblValue.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValue.Location = new System.Drawing.Point(121, 9);
-            this.lblValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValue.Location = new System.Drawing.Point(182, 14);
             this.lblValue.Name = "lblValue";
-            this.lblValue.Size = new System.Drawing.Size(21, 21);
+            this.lblValue.Size = new System.Drawing.Size(29, 31);
             this.lblValue.TabIndex = 4;
             this.lblValue.Text = "0";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(529, 551);
+            this.ClientSize = new System.Drawing.Size(794, 848);
             this.Controls.Add(this.lblValue);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.ScoreTxt);
@@ -192,7 +181,6 @@
             this.Controls.Add(this.PipeBot);
             this.Controls.Add(this.PipeTop);
             this.Controls.Add(this.Flappy);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flappy Bird Ripoff";

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyBird", "FlappyBird\FlappyBird.csproj", "{37C034C9-3DE0-44F9-9D69-8130953C3890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappy.UnitTest", "Flappy.UnitTest\Flappy.UnitTest.csproj", "{6581D6F6-B424-4548-A239-E1CDC8F450A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyTest", "FlappyTest\FlappyTest.csproj", "{8BC2A82D-694D-4DB5-8DD2-6A39B6C12105}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{37C034C9-3DE0-44F9-9D69-8130953C3890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37C034C9-3DE0-44F9-9D69-8130953C3890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37C034C9-3DE0-44F9-9D69-8130953C3890}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6581D6F6-B424-4548-A239-E1CDC8F450A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6581D6F6-B424-4548-A239-E1CDC8F450A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6581D6F6-B424-4548-A239-E1CDC8F450A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6581D6F6-B424-4548-A239-E1CDC8F450A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC2A82D-694D-4DB5-8DD2-6A39B6C12105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC2A82D-694D-4DB5-8DD2-6A39B6C12105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC2A82D-694D-4DB5-8DD2-6A39B6C12105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC2A82D-694D-4DB5-8DD2-6A39B6C12105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

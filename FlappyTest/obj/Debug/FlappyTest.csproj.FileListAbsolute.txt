@@ -1,0 +1,17 @@
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\FlappyTest.dll
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\FlappyTest.pdb
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\FlappyBird.exe
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\FlappyBird.pdb
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\FlappyBird.exe.config
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\obj\Debug\FlappyTest.csprojAssemblyReference.cache
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\obj\Debug\FlappyTest.csproj.CoreCompileInputs.cache
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\obj\Debug\FlappyTest.csproj.CopyComplete
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\obj\Debug\FlappyTest.dll
+C:\Users\Alan Weik\source\repos\FlappyBird\FlappyTest\obj\Debug\FlappyTest.pdb
